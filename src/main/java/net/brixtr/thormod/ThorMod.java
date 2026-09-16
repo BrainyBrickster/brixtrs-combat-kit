@@ -7,8 +7,6 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-//Main Client Side Mod Code, make changes here, test if made by brainy
 public class ThorMod implements ModInitializer {
 	public static final String MOD_ID = "thor-mod";
 
@@ -16,6 +14,7 @@ public class ThorMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 
 		LOGGER.info("Hello Fabric world!");
 	}
