@@ -25,7 +25,7 @@ public class ModItems {
                 BuiltInRegistries.ITEM,
                 Identifier.fromNamespaceAndPath(ThorMod.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ThorMod.MOD_ID, name)))
-        );
+        ));
     }
 
 
@@ -33,9 +33,9 @@ public class ModItems {
 
         ThorMod.LOGGER.info("Registering Mod Items" + ThorMod.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(SHAWARMA);
-        })
+        });
 
     }
 
