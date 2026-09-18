@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "Asguardian Foods",
+  "ingredients": [
+    "minecraft:cooked_chicken",
+    "minecraft:bread"
+  ],
+  "result": {
+    "id": "thor-mod:shawarma"
+  }
+}
