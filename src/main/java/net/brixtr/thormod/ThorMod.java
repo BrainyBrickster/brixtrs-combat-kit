@@ -1,5 +1,6 @@
 package net.brixtr.thormod;
 
+import net.brixtr.thormod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -15,6 +16,7 @@ public class ThorMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
 	}
