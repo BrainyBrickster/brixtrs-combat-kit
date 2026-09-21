@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Thor Weapons",
+  "key": {
+    "B": "minecraft:breeze_rod",
+    "I": "minecraft:iron_block",
+    "N": "minecraft:netherite_block"
+  },
+  "pattern": [
+    "INI",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "id": "thor-mod:stormbreaker"
+  }
+}
