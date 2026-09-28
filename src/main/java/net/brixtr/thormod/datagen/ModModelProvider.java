@@ -1,6 +1,7 @@
 package net.brixtr.thormod.datagen;
 
 import net.brixtr.thormod.ThorMod;
+import net.brixtr.thormod.item.ModArmorMaterials;
 import net.brixtr.thormod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -8,6 +9,8 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.ModelTemplates;
+
+import static net.minecraft.client.data.models.ItemModelGenerators.TRIM_PREFIX_HELMET;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -25,6 +28,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.MEAD, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(ModItems.STORMBREAKER, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MJOLNIR, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModelGenerators.generateTrimmableItem(ModItems.WINGED_HELMET, ModArmorMaterials.STEEL_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModelGenerators.generateTrimmableItem(ModItems.BREECHES, ModArmorMaterials.STEEL_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+
 
     }
 }

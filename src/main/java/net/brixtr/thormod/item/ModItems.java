@@ -2,6 +2,9 @@ package net.brixtr.thormod.item;
 
 import net.brixtr.thormod.ThorMod;
 import net.brixtr.thormod.food.ModFoods;
+import net.brixtr.thormod.item.StormbreakerItem;
+
+import net.brixtr.thormod.weapons.MjolnirItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,6 +20,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 
@@ -26,43 +30,19 @@ import static net.brixtr.thormod.item.ModToolMaterials.*;
 
 public class ModItems {
 
+
+    //My Food stuffs and all
     public static final Item SHAWARMA = registerItem("shawarma", properties -> new Item(properties.
             food(ModFoods.SHAWARMA, ModFoods.SHAWARMA_CONSUMABLE)));
     public static final Item MEAD = registerItem("mead", properties -> new Item(properties.food(ModFoods.MEAD, ModFoods.MEAD_CONSUMABLE)));
 
-    public static final Item STORMBREAKER = registerItem("stormbreaker", properties -> new AxeItem(STAR, 10f, -3.0f, properties) {
+    //My weapons
+    public static final Item STORMBREAKER = registerItem("stormbreaker", properties -> new StormbreakerItem(ModToolMaterials.STAR, 10.0f, -3.0f, properties));
+    public static final Item MJOLNIR = registerItem("mjolnir", properties -> new MjolnirItem(properties));
 
-        // Feature 1: The 10-Block Right-Click Cleave Attack
-        @Override
-        public net.minecraft.world.InteractionResult use(net.minecraft.world.level.Level level, net.minecraft.world.entity.player.Player player, net.minecraft.world.InteractionHand hand) {
-            net.minecraft.world.item.ItemStack itemStack = player.getItemInHand(hand);
-
-            if (!level.isClientSide()) {
-                net.minecraft.world.phys.AABB area = player.getBoundingBox().inflate(10.0);
-
-                level.getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class, area, entity -> entity != player).forEach(entity -> {
-                    entity.hurt(level.damageSources().playerAttack(player), 10f); // Deals 5 hearts of damage
-                });
-
-                player.getCooldowns().addCooldown(this.getDefaultInstance(), 200);
-            }
-
-            return InteractionResult.SUCCESS;
-        }
-
-        // Feature 2: Force Sharpness 10 and Channeling when crafted
-        @Override
-        public void onCraftedBy(net.minecraft.world.item.ItemStack stack, net.minecraft.world.entity.player.Player player) {
-            super.onCraftedBy(stack, player);
-
-            // Dynamic look up from the modern 1.21+ enchantment registry data system
-            var enchantmentRegistry = player.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
-
-            // Safely applies the enchantments via their registry references
-            stack.enchant(enchantmentRegistry.getOrThrow(Enchantments.SHARPNESS), 10);
-            stack.enchant(enchantmentRegistry.getOrThrow(Enchantments.EFFICIENCY), 6);
-        }
-    });
+    //My aarmour
+    public static final Item WINGED_HELMET = registerItem("winged_battle_helmet", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final Item BREECHES = registerItem("asguardian_breech", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
 
 
 
@@ -90,6 +70,16 @@ public class ModItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
             output.accept(STORMBREAKER);
         });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(MJOLNIR);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(WINGED_HELMET);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(BREECHES);
+        });
+
 
 
     }

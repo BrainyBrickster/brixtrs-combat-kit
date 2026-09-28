@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "thor-mod:steel"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "thor-mod:steel"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "thor-mod:steel"
+      }
+    ]
+  }
+}

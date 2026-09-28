@@ -3,5 +3,10 @@
   "item.thor-mod.mead" : "Asguardian Mead",
 
 
-  "item.thor-mod.stormbreaker" : "Stormbreaker"
+  "item.thor-mod.stormbreaker" : "Stormbreaker",
+  "item.thor-mod.mjolnir" : "Mjolnir",
+
+
+  "item.thor-mod.winged_battle_helmet" : "Winged Battle Helmet",
+  "item.thor-mod.asguardian_breech" : "Breeches"
 }

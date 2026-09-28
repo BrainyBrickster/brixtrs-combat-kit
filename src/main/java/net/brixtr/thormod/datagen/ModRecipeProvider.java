@@ -51,6 +51,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("Thor Weapons")
                         .save(output);
 
+                shaped(RecipeCategory.COMBAT, ModItems.WINGED_HELMET)
+                        .pattern("P P")
+                        .pattern("III")
+                        .pattern("I I")
+                        .define('P', Items.PHANTOM_MEMBRANE)
+                        .define('I', Items.IRON_INGOT)
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .unlockedBy(getHasName(Items.PHANTOM_MEMBRANE), has(Items.PHANTOM_MEMBRANE))
+                        .group("Thor Armor")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.BREECHES)
+                        .pattern("LIL")
+                        .pattern("I I")
+                        .pattern("I I")
+                        .define('L', Items.LEATHER)
+                        .define('I', Items.IRON_INGOT)
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
+                        .group("Thor Armor")
+                        .save(output);
+
+
             }
         };
     }

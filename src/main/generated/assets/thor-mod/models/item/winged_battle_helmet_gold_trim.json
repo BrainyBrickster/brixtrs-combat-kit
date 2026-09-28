@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thor-mod:item/winged_battle_helmet",
+    "layer1": "minecraft:trims/items/helmet_trim_gold"
+  }
+}

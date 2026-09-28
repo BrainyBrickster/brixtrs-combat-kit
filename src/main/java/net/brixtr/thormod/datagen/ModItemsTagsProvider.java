@@ -9,8 +9,8 @@ import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModItemsTagProvider extends FabricTagsProvider.ItemTagsProvider {
-    public ModItemsTagProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registryLookupFuture) {
+public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
+    public ModItemsTagsProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registryLookupFuture) {
         super(output, registryLookupFuture);
     }
 
@@ -19,5 +19,7 @@ public class ModItemsTagProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ItemTags.AXES).add(ModItems.STORMBREAKER);
 
+        valueLookupBuilder(ItemTags.HEAD_ARMOR).add(ModItems.WINGED_HELMET);
+        valueLookupBuilder(ItemTags.LEG_ARMOR).add(ModItems.BREECHES);
     }
 }

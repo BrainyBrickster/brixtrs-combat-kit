@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Thor Armor",
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:phantom_membrane"
+  },
+  "pattern": [
+    "P P",
+    "III",
+    "I I"
+  ],
+  "result": {
+    "id": "thor-mod:winged_battle_helmet"
+  }
+}

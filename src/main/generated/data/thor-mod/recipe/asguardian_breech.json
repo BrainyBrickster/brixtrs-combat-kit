@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Thor Armor",
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "L": "minecraft:leather"
+  },
+  "pattern": [
+    "LIL",
+    "I I",
+    "I I"
+  ],
+  "result": {
+    "id": "thor-mod:asguardian_breech"
+  }
+}
