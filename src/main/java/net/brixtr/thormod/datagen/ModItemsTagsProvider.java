@@ -18,7 +18,6 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.@NonNull Provider registries) {
 
         valueLookupBuilder(ItemTags.AXES).add(ModItems.STORMBREAKER);
-
         valueLookupBuilder(ItemTags.HEAD_ARMOR).add(ModItems.WINGED_HELMET);
         valueLookupBuilder(ItemTags.LEG_ARMOR).add(ModItems.BREECHES);
     }

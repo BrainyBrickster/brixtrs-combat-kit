@@ -51,6 +51,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("Thor Weapons")
                         .save(output);
 
+                shaped(RecipeCategory.COMBAT, ModItems.MJOLNIR)
+                        .pattern("WHW")
+                        .pattern(" B ")
+                        .pattern(" B ")
+                        .define('B', Items.BREEZE_ROD)
+                        .define('W', Items.NETHER_STAR)
+                        .define('H', Items.HEAVY_CORE)
+                        .unlockedBy(getHasName(Items.BREEZE_ROD), has(Items.BREEZE_ROD))
+                        .unlockedBy(getHasName(Items.HEAVY_CORE), has(Items.HEAVY_CORE))
+                        .group("Thor Weapons")
+                        .save(output);
+
+
                 shaped(RecipeCategory.COMBAT, ModItems.WINGED_HELMET)
                         .pattern("P P")
                         .pattern("III")

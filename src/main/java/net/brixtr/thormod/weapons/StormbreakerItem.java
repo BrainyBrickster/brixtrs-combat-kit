@@ -12,7 +12,6 @@ import net.minecraft.world.phys.AABB;
 
 public class StormbreakerItem extends AxeItem {
 
-    // Constructor matching the parameters you used in ModItems
     public StormbreakerItem(ToolMaterial tier, float attackDamage, float attackSpeed, Properties properties) {
         super(tier, attackDamage, attackSpeed, properties);
     }
@@ -21,7 +20,6 @@ public class StormbreakerItem extends AxeItem {
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         ItemStack itemStack = player.getItemInHand(hand);
 
-        // The code for right click ability
         if (!level.isClientSide()) {
             AABB area = player.getBoundingBox().inflate(10.0);
             level.getEntitiesOfClass(LivingEntity.class, area, entity -> entity != player).forEach(livingEntity -> {
