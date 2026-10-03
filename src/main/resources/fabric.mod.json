@@ -18,6 +18,9 @@
 		"main": [
 			"net.brixtr.thormod.ThorMod"
 		],
+		"client" : [
+			"net.brixtr.thormod.ThorModClient"
+		],
 		"fabric-datagen": [
 			"net.brixtr.thormod.ThorModDataGenerator"
 		]
