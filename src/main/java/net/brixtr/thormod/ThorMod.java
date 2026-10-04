@@ -1,5 +1,6 @@
 package net.brixtr.thormod;
 
+import net.brixtr.thormod.armor.HelmetItem;
 import net.brixtr.thormod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,6 +20,8 @@ public class ThorMod implements ModInitializer {
 		ModItems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
+
+		HelmetItem.initializeAbilityTick();
 	}
 
 	public static Identifier id(String path) {
