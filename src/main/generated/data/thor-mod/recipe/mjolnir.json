@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Thor Weapons",
+  "key": {
+    "B": "minecraft:breeze_rod",
+    "H": "minecraft:heavy_core",
+    "W": "minecraft:nether_star"
+  },
+  "pattern": [
+    "WHW",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "id": "thor-mod:mjolnir"
+  }
+}

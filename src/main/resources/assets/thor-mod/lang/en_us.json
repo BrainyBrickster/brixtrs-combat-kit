@@ -8,5 +8,11 @@
 
 
   "item.thor-mod.winged_battle_helmet" : "Winged Battle Helmet",
-  "item.thor-mod.asguardian_breech" : "Breeches"
+  "item.thor-mod.asguardian_breech" : "Breeches",
+
+  "tooltip.thormod.stormbreaker" :"Right-click to attack all enemies in a 10 block radius",
+  "tooltip.thormod.mjolnir" : "Right-click to propel forward",
+
+  "tooltip.thormod.breech" : "Double-tap jump key to initiate double jump",
+  "tooltip.thormod.helmet" : "Wear during the rain to get passive effects"
 }

@@ -34,6 +34,7 @@ public class MjolnirItem extends MaceItem {
         return InteractionResult.SUCCESS;
 
     }
+
 }
 
 /*@Override
