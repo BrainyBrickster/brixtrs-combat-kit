@@ -13,7 +13,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class MjolnirItem extends MaceItem {
     public MjolnirItem(Properties properties) {
-        super(properties);
+        super(properties.stacksTo(1).durability(3000));
     }
 
     @Override

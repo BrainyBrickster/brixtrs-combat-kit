@@ -1,5 +1,6 @@
 // 26.1.2	-999999999-01-01T00:00:00	Thor Mod/Model Definitions
 495772e88a566d079b025f5ea22d2f6586111474 assets/thor-mod/items/asguardian_breech.json
+25ab932fa49d3ee5bd92cd277b2a0fa37b2f410c assets/thor-mod/items/fists.json
 81dd3f784ea8ae2a8ac56455519cae3a0bfa13e3 assets/thor-mod/items/mead.json
 d5325f0836107672e66c2476c50c244d786cd222 assets/thor-mod/items/mjolnir.json
 1a723c35f072de0771118da2b3fba2768195b521 assets/thor-mod/items/shawarma.json
@@ -17,6 +18,7 @@ ffa6d70f824f3babd3ddfa910e29e0f4387a692a assets/thor-mod/models/item/asguardian_
 e8f7a62fac584783ce3986f78948f3d4c816983d assets/thor-mod/models/item/asguardian_breech_quartz_trim.json
 3f26a328db2b7c0b9acb395dedebe2dbb8616634 assets/thor-mod/models/item/asguardian_breech_redstone_trim.json
 40e7789fc53c316033b6a2205a41fbcbca732fd2 assets/thor-mod/models/item/asguardian_breech_resin_trim.json
+2f77a2c5f1a256ec61e5c5d3780c89463d9d466e assets/thor-mod/models/item/fists.json
 ea936f7053d6bd93dc888e9392a6b81d9d54748e assets/thor-mod/models/item/mead.json
 8fa4b918dddd0c07553b92738afa6864d3dea66e assets/thor-mod/models/item/mjolnir.json
 535741b64498a7f06f233dbca8c7d9a9b1343890 assets/thor-mod/models/item/shawarma.json

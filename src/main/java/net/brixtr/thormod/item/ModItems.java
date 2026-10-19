@@ -49,6 +49,19 @@ public class ModItems {
             builder.accept(Component.translatable("tooltip.thormod.stormbreaker"));
         }
     });
+
+    public static final Item FISTS = registerItem("fists", properties -> new Item(
+            properties.component(DataComponents.ATTRIBUTE_MODIFIERS,
+                    ItemAttributeModifiers.builder()
+                            .add(Attributes.BLOCK_INTERACTION_RANGE,
+                                    new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "fists_block_reach"), -2.5f, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ENTITY_INTERACTION_RANGE,
+                                    new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "fists_entity_reach"), -1.0f, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .build()
+            )
+    ));
     public static final Item MJOLNIR = registerItem("mjolnir", properties -> new MjolnirItem(
             properties.component(DataComponents.ATTRIBUTE_MODIFIERS,
                     ItemAttributeModifiers.builder()
@@ -58,6 +71,8 @@ public class ModItems {
                             .add(Attributes.ATTACK_SPEED,
                                     new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "speed"), 12.0f, AttributeModifier.Operation.ADD_VALUE),
                                     EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ENTITY_INTERACTION_RANGE,
+                                    new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "mjolnir_entity_reach"), 2f, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
                             .build()
             )
     ) {
@@ -118,6 +133,9 @@ public class ModItems {
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
             output.accept(BREECHES);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(FISTS);
         });
 
 
