@@ -1,0 +1,33 @@
+{
+  "parent": "thor-mod:thormod/heavenly",
+  "criteria": {
+    "has_mjolnir": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:mjolnir"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.root.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "thor-mod:mjolnir"
+    },
+    "title": {
+      "translate": "advancements.thormod.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_mjolnir"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

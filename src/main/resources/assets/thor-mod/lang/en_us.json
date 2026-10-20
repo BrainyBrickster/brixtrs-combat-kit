@@ -15,5 +15,26 @@
   "tooltip.thormod.mjolnir" : "Right-click to propel forward",
 
   "tooltip.thormod.breech" : "Double-tap jump key to initiate double jump",
-  "tooltip.thormod.helmet" : "Wear during the rain to get passive effects"
+  "tooltip.thormod.helmet" : "Wear during the rain to get passive effects",
+
+  "advancements.thormod.base.title" : "Thor Mod Advancements",
+  "advancements.thormod.base.description" : "Explore the Thor Mod, starting with the shawarma!",
+
+  "advancements.thormod.root.title" : "Godsent",
+  "advancements.thormod.root.description" : "Obtain the legendary Mjolnir",
+
+  "advancements.thormod.stealthy.title": "Speed is my Specialty",
+  "advancements.thormod.steatlhy.description" : "Unleash the speed of the Karambit",
+
+  "advancements.thormod.heavenly.title" : "Heavenly",
+  "advancements.thormod.heavenly.description": "Unlock the wraith of the Stormbreaker",
+
+  "advancements.thormod.jumper.title": "Woo-hoo!",
+  "advancements.thormod.jumper.description": "Use the Breeches to go SUPER HIGH!",
+
+  "advancements.thormod.helmet.title": "Harness the Rain",
+  "advancements.thormod.helmet.description": "Use the Winged Helmet in the rain to find out more!",
+
+  "advancements.thormod.mead.title": "Get Funky",
+  "advancements.thormod.mead.description" : "Drink some Mead"
 }

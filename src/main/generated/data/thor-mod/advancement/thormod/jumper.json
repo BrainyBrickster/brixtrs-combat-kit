@@ -1,0 +1,32 @@
+{
+  "parent": "thor-mod:thormod/base",
+  "criteria": {
+    "has_breech": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:asguardian_breech"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.jumper.description"
+    },
+    "icon": {
+      "id": "thor-mod:asguardian_breech"
+    },
+    "title": {
+      "translate": "advancements.thormod.jumper.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_breech"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "has_food": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:shawarma"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancement/backgrounds/stone.png",
+    "description": {
+      "translate": "advancements.thormod.base.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "thor-mod:shawarma"
+    },
+    "title": {
+      "translate": "advancements.thormod.base.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_food"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

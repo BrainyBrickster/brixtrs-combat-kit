@@ -1,11 +1,13 @@
 // 26.1.2	-999999999-01-01T00:00:00	Thor Mod/Thor Mod Recipes
 4e487d27c3bbb5bbcb63b037d8d254cc4003715c data/thor-mod/advancement/recipes/combat/asguardian_breech.json
+d5243c3005b4db3a8025ba61decfd3705bac042f data/thor-mod/advancement/recipes/combat/fists.json
 1c146dcd6e2917b4654d6db29b4b7a4d2762e8fa data/thor-mod/advancement/recipes/combat/mjolnir.json
 54ff84c8a2bd49a41098a2d3a770100a92196332 data/thor-mod/advancement/recipes/combat/stormbreaker.json
 8cecd27f2dca220618445f7e8d42865d76383c87 data/thor-mod/advancement/recipes/combat/winged_battle_helmet.json
 76803a8ae5893303945b5f803a9afa20554091af data/thor-mod/advancement/recipes/food/mead.json
 1e1686c09eadd56c00d9b9b6c48e87795cf48fff data/thor-mod/advancement/recipes/food/shawarma.json
 7c22d7b89ccc223642bcf3ebd207ed3200d2d97e data/thor-mod/recipe/asguardian_breech.json
+f7453ede14ae16b7649985e57a6e278855298a0a data/thor-mod/recipe/fists.json
 3644882b23967b3419288e4244621bfab2a6e3de data/thor-mod/recipe/mead.json
 0ae4ecf965cac7f4a4e4617830e7c0c4bd0156bd data/thor-mod/recipe/mjolnir.json
 fe43b7229ee02facff90957f9919d5955c6801f0 data/thor-mod/recipe/shawarma.json

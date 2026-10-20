@@ -1,5 +1,6 @@
 package net.brixtr.thormod;
 
+import net.brixtr.thormod.datagen.ModAdvancementsProvider;
 import net.brixtr.thormod.datagen.ModEquipmentAssetProvider;
 import net.brixtr.thormod.datagen.ModModelProvider;
 import net.brixtr.thormod.datagen.ModRecipeProvider;
@@ -13,6 +14,7 @@ public class ThorModDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModAdvancementsProvider::new);
 
 		pack.addProvider(ModEquipmentAssetProvider::new);
 

@@ -1,0 +1,33 @@
+{
+  "parent": "thor-mod:thormod/stealthy",
+  "criteria": {
+    "has_stormbreaker": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:stormbreaker"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.heavenly.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "thor-mod:stormbreaker"
+    },
+    "title": {
+      "translate": "advancements.thormod.heavenly.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_stormbreaker"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

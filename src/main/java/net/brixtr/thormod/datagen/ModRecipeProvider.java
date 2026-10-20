@@ -86,6 +86,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("Thor Armor")
                         .save(output);
 
+                shaped(RecipeCategory.COMBAT, ModItems.FISTS)
+                        .pattern(" I ")
+                        .pattern("L  ")
+                        .define('L', Items.STICK)
+                        .define('I', Items.NETHERITE_INGOT)
+                        .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
+                        .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                        .group("Thor Weapons")
+                        .save(output);
+
 
             }
         };

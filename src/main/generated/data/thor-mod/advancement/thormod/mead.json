@@ -1,0 +1,32 @@
+{
+  "parent": "thor-mod:thormod/base",
+  "criteria": {
+    "has_fod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:mead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.mead.description"
+    },
+    "icon": {
+      "id": "thor-mod:mead"
+    },
+    "title": {
+      "translate": "advancements.thormod.mead.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_fod"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

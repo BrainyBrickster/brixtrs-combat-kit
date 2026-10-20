@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Thor Weapons",
+  "key": {
+    "I": "minecraft:netherite_ingot",
+    "L": "minecraft:stick"
+  },
+  "pattern": [
+    " I ",
+    "L  "
+  ],
+  "result": {
+    "id": "thor-mod:fists"
+  }
+}

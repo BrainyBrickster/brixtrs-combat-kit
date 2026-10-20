@@ -1,0 +1,33 @@
+{
+  "parent": "thor-mod:thormod/base",
+  "criteria": {
+    "has_karambit": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:fists"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.steatlhy.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "thor-mod:fists"
+    },
+    "title": {
+      "translate": "advancements.thormod.stealthy.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_karambit"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

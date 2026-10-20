@@ -1,0 +1,32 @@
+{
+  "parent": "thor-mod:thormod/jumper",
+  "criteria": {
+    "has_breech": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thor-mod:winged_battle_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.thormod.helmet.description"
+    },
+    "icon": {
+      "id": "thor-mod:winged_battle_helmet"
+    },
+    "title": {
+      "translate": "advancements.thormod.helmet.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_breech"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

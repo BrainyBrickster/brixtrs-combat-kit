@@ -59,6 +59,12 @@ public class ModItems {
                             .add(Attributes.ENTITY_INTERACTION_RANGE,
                                     new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "fists_entity_reach"), -1.0f, AttributeModifier.Operation.ADD_VALUE),
                                     EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.MOVEMENT_SPEED,
+                                    new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "fists_speed"), 0.05f, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.SAFE_FALL_DISTANCE,
+                                    new AttributeModifier(Identifier.fromNamespaceAndPath("thormod", "fists_fall"), 80.0f, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
                             .build()
             )
     ));
